@@ -1,7 +1,7 @@
 theme = "docuapi"
 languageCode = "en-us"
-baseurl = "http://docuapi.com/"
-title = "DocuAPI Example Site"
+baseurl = "https://galaxion.org/docs/"
+title = "Galaxion Platform Documentation"
 
 # Code higlighting settings
 pygmentsCodefences = true
@@ -39,11 +39,10 @@ name = "Javascript"
 [languages.en]
 languageName = "English"
 weight = 2
-title = "DocuAPI Example Site"
+title = "Galaxion Platform Docs"
 
 # Left sidebar footer items. Use HTMl or Markdown.
 toc_footers = [
-"<a href='#'>Sign Up for a Developer Key</a>",
 "Documentation Powered by [DocuAPI](https://github.com/bep/docuapi)",
 "Hugo Theme by [bep](https://github.com/bep)"
 ]
