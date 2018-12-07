@@ -23,7 +23,7 @@ if err != nil {
 s.Broadcast.AddTransaction(txdata, fee)
 ```
 
-[DAVE TODO: check that code can actually run]
+[DAVE TODO: check that the above code can actually run]
 
 [TODO: build out a Blockmania HTTP API endpoint that can accept transactions and order them]
 
