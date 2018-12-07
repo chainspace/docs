@@ -7,7 +7,7 @@ title: Sharding
 
 ## Introduction
 
-TODO. What is sharding, anway? Why would we need it if we've already got speedy consensus? 
+TODO. What is sharding, anyway? Why would we need it if we've already got speedy consensus? 
 
 ## Sending Transactions To Shards
 

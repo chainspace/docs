@@ -29,4 +29,4 @@ s.Broadcast.AddTransaction(txdata, fee)
 
 [TODO: build out a Blockmania HTTP API endpoint that can accept transactions and order them]
 
-[TODO: let's build a separate Blockmania binary that can be run independently, and keep its configs in `~/.blockmania/<networkname>`]
+[TODO: let's build a separate Blockmania binary that can be run independently, and keep its configs in `~/.blockmania/{networkname}`]

@@ -7,7 +7,7 @@ title: Performance Testing
 
 ## Consensus
 
-The `chainspace genload <networkname> <nodenumber>` command starts up the specified node, and additionally a client which floods the consensus interface (in Go) with simulated transactions (100 bytes by default).
+The `chainspace genload {networkname} {nodenumber}` command starts up the specified node, and additionally a client which floods the consensus interface (in Go) with simulated transactions (100 bytes by default).
 
 To get some consensus performance numbers, run this in 4 separate terminals:
 

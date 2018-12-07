@@ -12,11 +12,17 @@ title: Quickstart
 
 ### Setting Up and Running Nodes
 
-The `chainspace init <networkname>` command, by default, creates a network consisting of 12 nodes grouped into 3 shards of 4 nodes each.
+The `chainspace init {networkname}` command, by default, creates a network consisting of 12 nodes grouped into 3 shards of 4 nodes each.
+
+> Initialize a new Chainspace network called "foonet"
+
+```
+chainspace init foonet
+```
 
 The setup you get from that is heavily skewed towards convenient development rather than production use. It will change as we get closer to production.
 
-Have a look at the config files for the network you've generated (stored by default in `~/.chainspace/<networkname>`). The `network.yaml` file contains public signing keys and transport encryption certificates for each node in the network. Everything in `network.yaml` is public, and for the moment it defines network topology. Later, it will be replaced by a directory component.
+Have a look at the config files for the network you've generated (stored by default in `~/.chainspace/{networkname}`). The `network.yaml` file contains public signing keys and transport encryption certificates for each node in the network. Everything in `network.yaml` is public, and for the moment it defines network topology. Later, it will be replaced by a directory component.
 
 Each node also gets its own named configuration directory, containing:
 
@@ -37,7 +43,7 @@ chainspace run foonet 7
 chainspace run foonet 10
 ```
 
-> A convenient script runner is included. The short way to run it is:
+> A convenient script runner is included. The short way to run it is
 
 ```bash
 rm -rf ~/.chainspace # clear previous configs, superbad idea in production
@@ -49,4 +55,4 @@ This will fire up a single shard which runs consensus, and make it available for
 
 ## REST Documentation
 
-Many parts of the system are available to poke at via a RESTful HTTP server interface. After starting a node locally, you can see what's available by going to http://localhost:9001/swagger/index.html - where `9001` is the node's HTTP server port as defined in `~/.chainspace/<network-name>/node-X/node.yaml`
+Many parts of the system are available to poke at via a RESTful HTTP server interface. After starting a node locally, you can see what's available by going to http://localhost:9001/swagger/index.html - where `9001` is the node's HTTP server port as defined in `~/.chainspace/{networkname}/node-{nodenumber}/node.yaml`
