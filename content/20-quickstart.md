@@ -45,6 +45,10 @@ script/run-testnet foonet
 
 This will fire up a single shard which runs consensus, and make it available for use.
 
+## REST Documentation
+
+Many parts of the system are available to poke at via a RESTful HTTP server interface. After starting a node locally, you can see what's available by going to http://localhost:9001/swagger/index.html - where `9001` is the node's HTTP server port as defined in `~/.chainspace/<network-name>/node-X/node.yaml`
+
 ## Peer Discovery
 
 We have not yet implemented seed nodes, or a cryptographically secure method of peer discovery. This is for future development and the details aren't yet clear (although we're working on it). So we have implemented some simple methods for stitching together networks until we are ready to commit to a final system.
@@ -95,6 +99,7 @@ s.Broadcast.AddTransaction(txdata, fee)
 ```
 
 [DAVE TODO: check that code can actually run]
+[TODO: build out a Blockmania HTTP API endpoint that can accept transactions and order them]
 
 ## Consensus Load Generator
 
@@ -131,11 +136,7 @@ Running `chainspace genload` with swap enabled can cause system lockups on Linux
 
 TODO: Write this...
 
-## REST Documentation
 
-Many parts of the system are available to poke at via a RESTful HTTP server interface. After starting a node locally, you can see what's available by going to http://localhost:9001/swagger/index.html - where `9001` is the node's HTTP server port as defined in `~/.chainspace/<network-name>/node-X/node.yaml`
-
-TODO: we still need to really document how to use the REST endpoints from a conceptual standpoint.
 
 
 ## Key-Value Store
