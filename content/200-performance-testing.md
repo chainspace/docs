@@ -14,7 +14,7 @@ To get some consensus performance numbers, run this in 4 separate terminals:
 > Starting genload on nodes manually (make sure you've already got nodes running!)
 
 ```bash
-rm -rf ~/.chainspace  # wow this would be a bad idea if there's anything useful in your chain
+rm -rf ~/.chainspace/foonet
 chainspace init foonet
 chainspace genload foonet 1
 chainspace genload foonet 4
@@ -29,18 +29,22 @@ A convenient script runner is included.
 > Using the convenience script, you don't need to start the nodes yourself; the script will handle it
 
 ```bash
-rm -rf ~/.chainspace # always a bad idea if you haven't thought it through
+rm -rf ~/.chainspace/foonet
 chainspace init foonet
 script/genload-testnet foonet
 ```
 
 This will start nodes 1, 4, 7 and 10 in `tmux` terminals, pumping transactions through automatically.
 
-<aside class="warning">To get valid results, turn off all other applications when doing performance testing. Also disable swap on your system, turn off CPI BIOS thermal controls, disable power management, and don't run it on battery power.</aside>
+<aside class="warning">
+To get valid results, turn off all other applications when doing performance testing. Also disable swap on your system, turn off CPI BIOS thermal controls, disable power management, and don't run it on battery power.
+
+Running <code>chainspace genload</code> with swap enabled can cause system lockups on Linux, as the system thinks much more RAM is available than is in fact the case, write latencies increase drastically once swapping starts, and the system freaks out. <code>sudo swapoff -a</code> is your friend. <code>sudo swapon -a</code> gets your swap back when you're done testing Chainspace.
+</aside>
 
 
 
-Running `chainspace genload` with swap enabled can cause system lockups on Linux, as the system thinks much more RAM is available than is in fact the case, write latencies increase drastically once swapping starts, and the system freaks out. `sudo swapoff -a` is your friend, with `sudo swapon -a` to get your swap back when you're done running Chainspace.
+
 
 TODO: note what we see :).
 

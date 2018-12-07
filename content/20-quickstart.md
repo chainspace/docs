@@ -5,12 +5,15 @@ title: Quickstart
 
 # Quickstart
 
+## Installation
+
 * Install Go 1.11. Earlier versions won't work.
-* `git clone` the code into the source dir of your `$GOPATH`, typically `~/go/src`
-* `make install`
+* Install `tmux`
+* `git clone` the code into `$GOPATH`, typically `~/go/src/chainspace.io/prototype`
+* `make install` will install to `$GOPATH/bin/chainspace`. Make sure this location is on your path.
 * `make contract`
 
-If everything worked, the `chainspace` command should be installed. Running it will give an overview of available functionality, with accompanying help flags available.
+If everything worked, the `chainspace` command should be installed and available. Running it will give an overview of available functionality. Help flags are available, have a look.
 
 ## Initialize a network
 
@@ -39,7 +42,7 @@ In the default localhost setup, nodes `1`, `4`, `7`, and `10` comprise shard 1. 
 > Here's how you can init a network and start each node individually
 
 ```bash
-rm -rf ~/.chainspace # destroy any old configs, make you sad in production
+rm -rf ~/.chainspace/foonet
 chainspace init foonet
 chainspace run foonet 1
 chainspace run foonet 4
@@ -50,7 +53,7 @@ chainspace run foonet 10
 > A convenient script runner is included. The short way to run it is
 
 ```bash
-rm -rf ~/.chainspace # clear previous configs, superbad idea in production
+rm -rf ~/.chainspace/foonet
 chainspace init foonet
 script/run-testnet foonet
 ```
