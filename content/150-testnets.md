@@ -1,11 +1,11 @@
 ---
-weight: 70
-title: Node Discovery
+weight: 150
+title: Running a testnet
 ---
 
-# Node Discovery
+# Running a testnet
 
-So far, this documentation has assumed that all nodes are running on a single machine. What if you want to run each node on a separate machine on a local network, or across the internet?
+So far, this documentation has assumed that all nodes are running on a single machine. What if you want to run a testnet, with each node on a separate machine on a local network, or across the internet?
 
 We have not yet implemented seed nodes, or a cryptographically secure method of peer discovery. So we have implemented some simple methods for stitching together networks until we are ready to commit to a final system.
 

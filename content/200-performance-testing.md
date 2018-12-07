@@ -1,5 +1,5 @@
 ---
-weight: 100
+weight: 200
 title: Performance Testing
 ---
 
@@ -7,12 +7,14 @@ title: Performance Testing
 
 ## Consensus
 
-The `chainspace genload {networkname} {nodenumber}` command starts up the specified node, and additionally a client which floods the consensus interface (in Go) with simulated transactions (100 bytes by default).
+The `chainspace genload {networkname} {nodenumber}` command starts up the specified node, and additionally a Go client which floods the consensus interface with simulated transactions (100 bytes by default).
 
 To get some consensus performance numbers, run this in 4 separate terminals:
 
+> Starting genload on nodes manually (make sure you've already got nodes running!)
+
 ```bash
-rm -rf ~/.chainspace
+rm -rf ~/.chainspace  # wow this would be a bad idea if there's anything useful in your chain
 chainspace init foonet
 chainspace genload foonet 1
 chainspace genload foonet 4
@@ -22,10 +24,12 @@ chainspace genload foonet 10
 
 The client keeps increasing load until it detects that the node is unable to handle the transaction rate, based on timing drift when waking up to generate epochs. At that point the client backs off, and in general a stable equilibrium is reached. The `genload` console logs then report on average, current, and highest transactions per second throughput.
 
-A convenient script runner is included. The short way to run it is:
+A convenient script runner is included.
+
+> Using the convenience script, you don't need to start the nodes yourself; the script will handle it
 
 ```bash
-rm -rf ~/.chainspace
+rm -rf ~/.chainspace # always a bad idea if you haven't thought it through
 chainspace init foonet
 script/genload-testnet foonet
 ```

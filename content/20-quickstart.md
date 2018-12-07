@@ -10,7 +10,9 @@ title: Quickstart
 * `make install`
 * `make contract`
 
-### Setting Up and Running Nodes
+If everything worked, the `chainspace` command should be installed. Running it will give an overview of available functionality, with accompanying help flags available.
+
+## Initialize a network
 
 The `chainspace init {networkname}` command, by default, creates a network consisting of 12 nodes grouped into 3 shards of 4 nodes each.
 
@@ -29,6 +31,8 @@ Each node also gets its own named configuration directory, containing:
 * public and private signing and transport encryption keys for each node
 * a node configuration file
 * log output
+
+## Running nodes
 
 In the default localhost setup, nodes `1`, `4`, `7`, and `10` comprise shard 1. Run those node numbers if you're only interested in seeing consensus working. Otherwise, start all nodes to see sharding working as well.
 
@@ -53,6 +57,6 @@ script/run-testnet foonet
 
 This will fire up a single shard which runs consensus, and make it available for use.
 
-## REST Documentation
+## REST documentation
 
 Many parts of the system are available to poke at via a RESTful HTTP server interface. After starting a node locally, you can see what's available by going to http://localhost:9001/swagger/index.html - where `9001` is the node's HTTP server port as defined in `~/.chainspace/{networkname}/node-{nodenumber}/node.yaml`

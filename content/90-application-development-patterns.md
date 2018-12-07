@@ -1,8 +1,8 @@
 ---
 weight: 90
-title: Application Development Patterns
+title: Dev Patterns
 ---
 
-# Application Development Patterns
+# Dev Patterns
 
 TODO: it's like a combination of event-sourcing and CQRS styles.
