@@ -1,4 +1,9 @@
-## Quickstart
+---
+weight: 20
+title: Quickstart
+---
+
+# Quickstart
 
 * Install Go 1.11. Earlier versions won't work.
 * `git clone` the code into the source dir of your `$GOPATH`, typically `~/go/src`
