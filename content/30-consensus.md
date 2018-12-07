@@ -13,6 +13,8 @@ TODO: what is consensus anyway? Why do we need it?
 
 At the moment, there is no externally-exposed network interface for using the consensus component by itself. You can however access it programmatically using Go, e.g.
 
+> Sending data to consensus whne you have compiled a client. This only works in Go. 
+
 ```go
 import "chainspace.io/prototype/node"
 

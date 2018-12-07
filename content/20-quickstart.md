@@ -24,7 +24,9 @@ Each node also gets its own named configuration directory, containing:
 * a node configuration file
 * log output
 
-In the default setup, nodes 1, 4, 7, and 10 comprise shard 1. Run those node numbers if you're only interested in seeing consensus working. Otherwise, start all nodes to see sharding working as well.
+In the default localhost setup, nodes `1`, `4`, `7`, and `10` comprise shard 1. Run those node numbers if you're only interested in seeing consensus working. Otherwise, start all nodes to see sharding working as well.
+
+> Here's how you can init a network and start each node individually
 
 ```bash
 rm -rf ~/.chainspace # destroy any old configs, make you sad in production
@@ -35,7 +37,7 @@ chainspace run foonet 7
 chainspace run foonet 10
 ```
 
-A convenient script runner is included. The short way to run it is:
+> A convenient script runner is included. The short way to run it is:
 
 ```bash
 rm -rf ~/.chainspace # clear previous configs, superbad idea in production

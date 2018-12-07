@@ -5,7 +5,9 @@ title: Developer Documentation
 
 # Developer Documentation
 
-## Setup
+TODO: there's platform dev, and also a need for SBAC client dev in multiple languages.
+
+## Platform Development
 
 You will need to the following to get Chainspace running locally:
 
@@ -18,7 +20,7 @@ With these requirements met, run `make install`. This will build and install the
 
 See the help documentation (`chainspace -h` and `httptest -h`) for each binary.
 
-## Committing
+### Committing
 
 Please use Git Flow - work in feature branches, and send merge requests to `develop`.
 
@@ -26,6 +28,10 @@ Please use Git Flow - work in feature branches, and send merge requests to `deve
 
 The version of the Chainspace application is set in the `VERSION` file found in the root of the project. Please update it when creating either a `release` or `hotfix` using the installed Git hooks mentioned above.
 
-## Adding Dependencies
+### Adding Dependencies
 
 Dependency management is done via `dep`. To add a dependency, do the standard `dep ensure -add <dependency>`. We attempted to use `go mod` (and will go back to it when it stabilises). Right now `mod` breaks too many of our tools.
+
+## Client Development
+
+TODO: we have clients already for XYZ langs, more would be nice. Here's how. 

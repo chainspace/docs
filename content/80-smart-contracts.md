@@ -1,6 +1,14 @@
 ---
-weight: 10
-title: Introduction
+weight: 80
+title: Smart Contracts
 ---
 
 # Smart Contracts
+
+## Introduction
+
+## The moving parts
+
+* Contracts
+* Checkers
+* Language-specific clients
