@@ -1,9 +1,9 @@
 ---
 weight: 50
-title: Key-Value Store
+title: Key-Value store
 ---
 
-# Key-Value Store
+# Key-Value store
 
 TODO: Add a description of what the Key Value store is and does, how it relates to SBAC, contracts, etc.
 
@@ -81,6 +81,6 @@ curl -v http://0.0.0.0:8001/kv/get -X POST -H 'Content-Type: application/json' -
 You can see that the `versionId` associated to your label evolves over time, when transactions are consuming them.
 
 
-## With multiple shards
+## Multiple shards
 
-Running the Key-Value store with multiple shards should work fine, but there's a caveat. Objects will change their `versionId`s on each update, and currently we're sharding on `versionId`. So if you're retrieving using `versionId`, your object may appear to migrate between shards whenever you update it. If you retrieve your object by `label` instead, you should be able to retrieve it, but only if you know which shard it's living in. TODO: this interacts with the planned Directory component. 
+Running the Key-Value store with multiple shards should work fine, but there's a caveat. Objects will change their `versionId`s on each update, and currently we're sharding on `versionId`. So if you're retrieving using `versionId`, your object may appear to migrate between shards whenever you update it. If you retrieve your object by `label` instead, you should be able to retrieve it, but only if you know which shard it's living in. TODO: this interacts with the planned Directory component.

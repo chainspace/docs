@@ -7,6 +7,6 @@ title: Subscriptions
 
 TODO: socket docs so that clients can get streaming notifications of changes to a given chain.
 
-## Websockets2
+## Websockets
 
 ## TCP sockets

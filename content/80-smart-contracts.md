@@ -1,9 +1,9 @@
 ---
 weight: 80
-title: Smart Contracts
+title: Smart contracts
 ---
 
-# Smart Contracts
+# Smart contracts
 
 ## Introduction
 

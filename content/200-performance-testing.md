@@ -3,7 +3,7 @@ weight: 200
 title: Performance Testing
 ---
 
-# Performance Testing
+# Performance testing
 
 ## Consensus
 
