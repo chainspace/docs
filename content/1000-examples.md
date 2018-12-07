@@ -4,7 +4,7 @@ title: Examples
 
 ---
 
-# Errors
+# Boilerplate
 
 <aside class="notice">DocuAPI allows you to split the single page documentation in as many files as needed. Files are included in the  default Hugo page order . One way of ordering the pages is by setting the page `weight` in the front matter. Pages with lower weight will be listed first.</aside>
 
@@ -28,7 +28,7 @@ Error Code | Meaning
 
 
 
-# Authentication
+## Authentication
 
 > To authorize, use this code:
 
@@ -81,7 +81,7 @@ Kittn expects for the API key to be included in all API requests to the server i
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
 
-# Kittens
+## Kittens
 
 ## Get All Kittens
 

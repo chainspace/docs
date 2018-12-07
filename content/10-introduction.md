@@ -5,7 +5,7 @@ title: Introduction
 
 # Introduction
 
-Chainspace is a smart contract system offering speedy consensus and unlimited horizontal scalability.
+Chainspace is a smart contract platform offering speedy consensus and unlimited horizontal scalability.
 
 At present, our running code has two main components:
 
