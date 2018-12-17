@@ -7,7 +7,7 @@ title: Consensus
 
 ## Introduction
 
-Consensus algorithms allow a distributed system to agree on a specific **order of transactions** without a central authority.
+Consensus algorithms allow nodes in a distributed system to agree on a specific **order of transactions** without a central authority.
 
 Incoming transactions arrive at nodes in an arbitrary order, potentially even at the same time. Participating nodes then talk to each other, and agree on an ordering of transactions which is **guaranteed to be the same** for all of them.
 
