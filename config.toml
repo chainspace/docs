@@ -38,7 +38,13 @@ key = "python"
 name = "Python"
 [[params.language_tabs]]
 key = "javascript"
-name = "Javascript"
+name = "JavaScript"
+[[params.language_tabs]]
+key = "c_sharp"
+name = "C#"
+[[params.language_tabs]]
+key = "java"
+name = "Java"
 
 #Languages
 [languages]
