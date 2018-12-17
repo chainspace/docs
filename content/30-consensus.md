@@ -7,11 +7,11 @@ title: Consensus
 
 ## Introduction
 
-Consensus is the manner in which a distributed system with no central authority agrees upon a specific **order of transactions**. Incoming transactions arrive at nodes in an arbitrary order, potentially even at the same moment in time. Participating nodes then talk to each other, and agree on an ordering which is **guaranteed to be the same** for all of them.
+Consensus is the manner in which a distributed system with no central authority agrees upon a specific **order of transactions**. Incoming transactions arrive at nodes in an arbitrary order, potentially even at the same time. Participating nodes then talk to each other, and agree on an ordering which is **guaranteed to be the same** for all of them.
 
-Blockmania is a [Byzantine Fault Tolerant](https://en.wikipedia.org/wiki/Byzantine_fault_tolerance) consensus algorithm. It functions correctly even if 1/3 participants are faulty or actively acting as attackers, with no loss of liveness or safety. In conditions where more than 1/3 of nodes are bad, Blockmania prioritises safety over liveness. Attackers or faulty nodes can stop processing for the cluster, but they cannot inject bad data into the chain.
+Blockmania is a [Byzantine Fault Tolerant](https://en.wikipedia.org/wiki/Byzantine_fault_tolerance) consensus algorithm. It functions correctly even if 1/3 participants are faulty or actively acting as attackers, with no loss of liveness or safety. In conditions where more than 1/3 of nodes are bad, Blockmania prioritises safety over liveness. Attackers or faulty nodes can stop processing for the cluster, but they cannot inject bad data.
 
-Blockmania nodes group incoming transactions into blocks, and exchange signed data and witness statements which are then propagated to all participating nodes. Each node writes out the same signed sequence of blocks, or blockchain, as every other node participating in a given consensus group.
+Blockmania nodes group incoming transactions into blocks, and exchange signed data and witness statements which are then propagated to all participating nodes. Each node writes out the same signed sequence of blocks, or blockchain, as every other node participating in a given consensus group. A chain of concatenated block hashes ensures that data cannot be arbitrarily changed by any participating nodes, even dishonest ones. 
 
 If you're curious about how it works, please read the [Blockmania](https://arxiv.org/abs/1809.01620) academic paper.
 
