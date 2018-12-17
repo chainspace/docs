@@ -7,7 +7,9 @@ title: Consensus
 
 ## Introduction
 
-TODO: what is consensus anyway? Why do we need it?
+Consensus is the manner in which a distributed system with no central authority agrees upon a specific order of transactions. Transactions hit nodes in an arbitrary order, potentially even at pretty much the same moment in time. Participating nodes then talk to each other, and come to a mutually agreed-upon ordering that will be the same for all of them.
+
+Blockmania is a Byzantine Fault Tolerant consensus algorithm which writes out a blockchain to disk storage. It functions correctly even if 1/3 participants are faulty or actively acting as attackers, with no loss of liveness or safety. In conditions where more than 1/3 of nodes are bad, Blockmania prioritises safety over liveness. Attackers or faulty nodes can stop processing for the cluster, but they cannot inject bad data into the chain.
 
 ## Sending transactions
 
