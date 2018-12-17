@@ -5,10 +5,22 @@ title: Smart contracts
 
 # Smart contracts
 
-## Introduction
+## Overview
 
-## The moving parts
+The moving parts:
 
 * Contracts
 * Checkers
+* Emulator
 * Language-specific clients
+
+## Contracts
+
+## Checkers
+
+## Emulator
+
+## Clients
+
+
+Note: we have a healthcheck URL at /healthcheck for all contracts.
