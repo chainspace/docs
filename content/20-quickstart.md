@@ -33,7 +33,7 @@ Each node also gets its own named configuration directory, containing:
 
 * public and private signing and transport encryption keys for each node
 * a node configuration file
-* log output
+* log output for the node
 
 ## Running nodes
 
@@ -62,4 +62,4 @@ This will fire up a single shard which runs consensus, and make it available for
 
 ## REST documentation
 
-Many parts of the system are available to poke at via a RESTful HTTP server interface. After starting a node locally, you can see what's available by going to http://localhost:9001/swagger/index.html - where `9001` is the node's HTTP server port as defined in `~/.chainspace/{networkname}/node-{nodenumber}/node.yaml`
+Many parts of the system are available to poke at via a RESTful HTTP server interface. After starting a node locally, you can see what's available by going to http://localhost:9001/swagger/index.html - where `9001` is the node's HTTP server port as defined in `~/.chainspace/{networkname}/node-{nodenumber}/node.yaml`. In the default generated config, REST port number is http://localhost:{9000+nodenumber} for each node.
