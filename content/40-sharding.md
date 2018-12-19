@@ -26,14 +26,18 @@ The basic application flow is as follows:
 
 Clients, contracts, and checkers can be implemented in any language.
 
+## Your first application
+
+Assuming you know one of the languages we've documented, follow along by selecting it from the code examples on the right hand side of the page. The easiest way to learn is by doing, so we'll show you how to build a smart contract for coins as a learning exercise, and explain Chainspace in more detail along the way.
+
 ### Clients and client libraries
 
 Client libraries exist in multiple languages, and we're in the process of writing more. Please let us know if you're interested in contributing a client in your favourite language.
 
 
-### Contracts
+### Contract
 
-### Checkers
+### Checker
 
 ### Emulator
 
