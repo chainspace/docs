@@ -15,7 +15,7 @@ Blockmania is a [Byzantine Fault Tolerant](https://en.wikipedia.org/wiki/Byzanti
 
 Blockmania nodes group incoming transactions into blocks, and exchange signed data and witness statements which are then propagated to all participating nodes. Each node writes out the same signed sequence of blocks, or blockchain, as every other node participating in a given consensus group. A chain of concatenated block hashes ensures that data cannot be arbitrarily changed by any participating nodes, even dishonest ones.
 
-If you're curious about how it works, please read the [Blockmania](https://arxiv.org/abs/1809.01620) academic paper.
+If you're curious about how it works at a deeper level, please read the [Blockmania](https://arxiv.org/abs/1809.01620) academic paper.
 
 ## Sending transactions
 
