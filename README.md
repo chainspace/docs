@@ -1,4 +1,4 @@
-# Galaxion documentation
+# Chainspace documentation
 
 This is the Chainspace platform's documentation. It's built using `hugo` (install instructions for your platfrom at https://gohugo.io/).
 
