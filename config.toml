@@ -1,14 +1,14 @@
 theme = "docuapi"
 languageCode = "en-us"
 
- # This may or may not work in a subfolder once deployed at e.g. http://galaxion.org/docs.
+ # This may or may not work in a subfolder once deployed at e.g. http://chainspace.io/docs.
  # See https://discourse.gohugo.io/t/issue-when-baseurl-have-subdirectory/4088/7.
  # So we may still have some interesting times ahead. Simple answer would be to
- # use "https://docs.galaxion.org" but subfolder's probably better for SEO.
- # Don't attempt to use https://galaxion.org/docs here, it'll appear to work
+ # use "https://docs.chainspace.io" but subfolder's probably better for SEO.
+ # Don't attempt to use https://chainspace.io/docs here, it'll appear to work
  # until you restart the Hugo server, at which point you'll get a blank page.
 baseurl = "/"
-title = "Galaxion Platform Documentation"
+title = "Chainspace Platform Documentation"
 
 # Code higlighting settings
 pygmentsCodefences = true
@@ -52,7 +52,7 @@ name = "Java"
 [languages.en]
 languageName = "English"
 weight = 2
-title = "Galaxion Platform Docs"
+title = "Chainspace Platform Docs"
 
 # Left sidebar footer items. Use HTMl or Markdown.
 toc_footers = [
