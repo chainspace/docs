@@ -16,6 +16,7 @@ There are a few different moving parts:
 1. Clients
 1. Contracts
 1. Checkers
+1. Subscriptions
 
 The basic application flow is as follows:
 
@@ -33,7 +34,6 @@ Assuming you know one of the languages we've documented, follow along by selecti
 ### Clients and client libraries
 
 Client libraries exist in multiple languages, and we're in the process of writing more. Please let us know if you're interested in contributing a client in your favourite language.
-
 
 ### Contract
 
