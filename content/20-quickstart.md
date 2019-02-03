@@ -52,7 +52,7 @@ chainspace run foonet 7
 chainspace run foonet 10
 ```
 
-> A convenient script runner is included. The short way to run it is
+> A convenient script runner is also included, so you don't need to start nodes individually in development. The short way to run it is
 
 ```bash
 make contract # you only need to do this once, it installs a dummy Docker contract
