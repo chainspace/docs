@@ -34,4 +34,4 @@ Dependency management is done via `dep`. To add a dependency, do the standard `d
 
 ## Client development
 
-TODO: we have clients already for XYZ langs, more would be nice. Here's how.
+We currently have a Chainspace client for JavaScript. More would be nice.
