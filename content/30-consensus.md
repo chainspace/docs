@@ -24,7 +24,7 @@ At the moment, there is no externally-exposed network interface for using the co
 > Sending data to consensus whne you have compiled a client. This only works in Go.
 
 ```go
-import "chainspace.io/prototype/node"
+import "chainspace.io/chainspace-go/node"
 
 s, err := node.Run(cfg)
 if err != nil {
