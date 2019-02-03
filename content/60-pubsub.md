@@ -31,8 +31,6 @@ Assuming you're connecting on the first node on your local machine, you can make
 </script>
 ```
 
-
-
 ## TCP sockets
 
 Port {7000 + nodenumber} by default (increments with the nodenumber). You can specify the port

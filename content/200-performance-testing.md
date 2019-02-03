@@ -42,12 +42,6 @@ To get valid results, turn off all other applications when doing performance tes
 Running <code>chainspace genload</code> with swap enabled can cause system lockups on Linux, as the system thinks much more RAM is available than is in fact the case, write latencies increase drastically once swapping starts, and the system freaks out. <code>sudo swapoff -a</code> is your friend. <code>sudo swapon -a</code> gets your swap back when you're done testing Chainspace.
 </aside>
 
-
-
-
-
-TODO: note what we see :).
-
 ## Sharding
 
 [TODO: Jeremy's got some perf test scripts which we can document.]

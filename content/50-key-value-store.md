@@ -5,12 +5,9 @@ title: Key-Value store
 
 # Key-Value store
 
-TODO: Add a description of what the Key Value store is and does, how it relates to SBAC, contracts, etc.
+The Key-Value store allows you to retrieve the current value of a given key.
 
-How to use the key value storage.
-
-Prerequisites
--------------
+To use it:
 
 * Install [Docker](https://docs.docker.com/install/) for your platform
 * Test that Docker is working. Run `docker run hello-world` in a shell. Fix any errors before proceeding.
@@ -18,14 +15,15 @@ Prerequisites
 
 ## Building
 
-Build the docker image for your contracts, you can do this using the makefile at the root of the repository:
+Build the docker image for your contracts. You can do this using the makefile at the root of the repository:
 
 ```
 $ make contract
 ```
+
 In the future chainspace will pull the docker image directly from a docker registry according to which contract is being run. At present during development we've simply hard-coded in a dummy contract inside a Docker container we've made.  
 
-You may need to initialize the contract with your network: run `chainspace contracts <yournetworkname> create`. TODO: Jeremy under what conditions is this necessary?
+You may need to initialize the contract with your network: run `chainspace contracts <yournetworkname> create`.
 
 Next, run the script `script/run-sharding-testnet`.
 ```
@@ -40,8 +38,7 @@ This script will:
 
 The generated configuration exposes a HTTP REST API on all nodes. Node 1 starts on port 8001, Node 2 on port 8002 and so on.
 
-Seeding trial objects using httptest
-------------------------------------
+### Seeding trial objects using httptest
 
 In order to test the key value store you can use the `httptest` binary (which is installed at the same time as the chainspace binary when you run `make install`).
 
