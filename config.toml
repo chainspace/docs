@@ -7,7 +7,11 @@ languageCode = "en-us"
  # use "https://docs.chainspace.io" but subfolder's probably better for SEO.
  # Don't attempt to use https://chainspace.io/docs here, it'll appear to work
  # until you restart the Hugo server, at which point you'll get a blank page.
-baseurl = "/"
+ #
+ # For the moment I have hacked it: there's a `deploy` branch in the repo,
+ # set to /docs. The `master` branch is still set to "/". Gross but effective.
+ #
+baseurl = "/docs"
 title = "Chainspace Platform Documentation"
 
 # Code higlighting settings
