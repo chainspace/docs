@@ -42,6 +42,8 @@ In the default localhost setup, nodes `1`, `4`, `7`, and `10` comprise shard 1. 
 > Here's how you can init a network and start each node individually
 
 ```bash
+make contract # you only need to do this once, it installs a dummy Docker contract
+chainspace contracts foonet create # you only need to do this once, it links the Docker contract to your nodes
 rm -rf ~/.chainspace/foonet
 chainspace init foonet
 chainspace run foonet 1
@@ -53,6 +55,8 @@ chainspace run foonet 10
 > A convenient script runner is included. The short way to run it is
 
 ```bash
+make contract # you only need to do this once, it installs a dummy Docker contract
+chainspace contracts foonet create # you only need to do this once, it links the Docker contract to your nodes
 rm -rf ~/.chainspace/foonet
 chainspace init foonet
 script/run-testnet foonet
